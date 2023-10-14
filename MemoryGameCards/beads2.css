@@ -1,0 +1,121 @@
+:root {
+  --Black: #000;
+  --White: #f0e4e4;
+  --Purple: #3d17a2;
+  --Gray: #5c5470;
+  --MidGray: #352f44;
+  --DarkGray: #2a2438;
+  --DarkRed: #a42624;
+  --Tan: #a3d6e6;/* #e6cda3; */
+  --background-blue: #00afdf;
+}
+
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--background-blue);
+      justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Vert 300 H 600, Hort w 950 v 330 */
+
+.outer_frame {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  background-color: antiquewhite;
+}
+
+
+.subject {
+	display: flex;
+	justify-content: center;
+
+	position: absolute; 
+	overflow: visible;
+	margin-top: 0px;
+	flex-direction: column;
+/*	filter: drop-shadow(0 0 1.5rem white); */
+}
+
+.face {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #eae611;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.eyerow{
+  width:120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+  position: absolute;
+  
+}
+.eyerow2{
+display: grid;
+  transform: rotate(90deg);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+    grid-template-columns: (4, 1fr);
+
+}
+  .chip {
+    width: 40px;
+    height: 40px;
+    border-radius: 0%;
+    background: var(--Purple);
+    border: 2px solid black;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .small{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 0;
+
+  }
+
+  .none{
+    background: transparent;
+    border: 0;
+  }
+.smile{
+    width: 200px;
+    height: 120px;
+    margin-top: 55px;
+background-image: linear-gradient(yellow 50%, black 50%);
+   border-radius: 50%;
+   border: 4px solid yellow;
+     
+}

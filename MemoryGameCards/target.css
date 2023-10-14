@@ -1,0 +1,105 @@
+:root {
+  --Black: #000;
+  --White: #f0e4e4;
+  --Purple: #5d5080;
+  --Gray: #5c5470;
+  --MidGray: #352f44;
+  --DarkGray: #2a2438;
+  --FadedRed: #e1514d;
+  --FadedWhite: #eadada;
+
+  --background-blue: #00afdf;
+}
+
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--background-blue);
+      justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Vert 300 H 600, Hort w 950 v 330 */
+
+.outer_frame {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  background-color: antiquewhite;
+}
+
+
+.subject {
+	display: flex;
+	justify-content: center;
+
+	position: absolute; 
+	overflow: visible;
+	margin-top: 0px;
+	flex-direction: column;
+/*	filter: drop-shadow(0 0 1.5rem white); */
+}
+
+.redCircle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--FadedRed);
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.whiteCircle{
+  width:280px;
+  height: 280px;
+  border-radius: 50%;
+  background: var(--FadedWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute; 
+}
+
+.red2{
+   width: 240px;
+  height: 240px;
+  }
+
+  .white2{
+  width: 200px;
+  height: 200px;
+  }
+
+  .red3{
+   width: 160px;
+  height: 160px;
+  }
+
+  .white3{
+  width: 120px;
+  height: 120px;
+  }
+
+  .red4{
+    width: 80px;
+    height: 80px;
+
+  }

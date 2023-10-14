@@ -1,0 +1,116 @@
+:root {
+  --Black: #000;
+  --White: #f0e4e4;
+  --Purple: #5d5080;
+  --Gray: #5c5470;
+  --MidGray: #352f44;
+  --DarkGray: #2a2438;
+  --DarkRed: #a42624;
+  --heart-red: #e1514d;
+  --accent-red: #ef2f2a;
+  --orange: #ef832a;
+  --yellow: #efac2a;
+  --DarkBlue: #6161D2;
+
+  --background-blue: #00afdf;
+}
+
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--background-blue);
+      justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Vert 300 H 600, Hort w 950 v 330 */
+
+.outer_frame {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  background-color: antiquewhite;
+}
+
+
+.subject {
+	display: flex;
+	justify-content: center;
+
+	position: absolute; 
+	overflow: visible;
+	margin-top: 0px;
+	flex-direction: column;
+}
+
+.heart {
+  width: 250px;
+  height: 250px;
+  background: red;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bigheart {
+  position: relative;
+  background-color: var(--DarkBlue);
+  width: 200px;
+  height: 200px;
+  margin-left: 5px;
+  margin-top: 1px;
+  filter: drop-shadow( 0 0.75rem black);
+}
+
+/* The circles */
+.bigheart:before, .bigheart:after {
+  position: absolute;
+  background-color: var(--DarkBlue);
+  width: 200px;
+  height: 200px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* moving the circles */
+.bigheart:before {
+  bottom: 0;
+  left: -100;
+}
+
+.bigheart:after {
+  top: -100px;
+  right: 0;
+}
+
+/*Rotate the whole thing */
+
+.bigheart {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
